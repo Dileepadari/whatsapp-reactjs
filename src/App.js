@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Router} from 'react-router-dom';
+
+import { Container, Row, Col, Image, } from 'react-bootstrap';
+import "./assets/css/splashscreen.css";
+
+// IMAGES
+import imgLogo from './assets/images/logo.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container fluid className="screen">
+          <div xs={6} md={4} className="d-flex justify-content-center align-items-center flex-column">
+            <Image className="imgLogo" src={imgLogo}/>
+            <h3 className="txtLogo mt-3">WhatsApp</h3>
+            <a href="/whatsapp">Selanjutnya</a>
+          </div>
+      </Container>
     </div>
   );
 }

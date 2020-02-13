@@ -1,0 +1,33 @@
+.Main{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #4a4a4a;
+}
+.bgColor{
+    width: 100%;
+    height: 120px;
+    background-color: #128C7E;
+    position: absolute;
+}
+.bgGrey{
+    background-color: #ededed !important;
+}
+.containerBox{
+    padding: 40px 70px !important;
+}
+.cardBox{
+    padding: 10px;
+}
+
+.circle{
+    border-radius: 50%;
+}
+.imgProfile{
+    width: 35px;
+    height: 35px;
+}
+
+.textPrimary{
+    color: #4a4a4a !important;
+}
